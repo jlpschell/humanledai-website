@@ -1,0 +1,43 @@
+---
+const problems = [
+  {
+    title: "Missed Calls = Lost Revenue",
+    description: "While you're on a job, leads are calling. If you don't answer, they call the next guy. That's money walking out the door."
+  },
+  {
+    title: "Your Customer List is Collecting Dust",
+    description: "You've got hundreds of past customers who'd hire you again - if you ever reached out. But who has time for that?"
+  },
+  {
+    title: "Follow-Up is a Full-Time Job",
+    description: "Texting leads, sending reminders, confirming appointments... it never ends. You didn't start a business to be a receptionist."
+  }
+];
+---
+
+<section class="py-20 lg:py-32 bg-primary text-white relative overflow-hidden">
+  <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDM0djItaDJ2LTJoLTJ6bTAgNHYyaDJ2LTJoLTJ6bS0yIDJ2LTJoLTJ2Mmgyem0wLTR2LTJoLTJ2MmgyeiIvPjwvZz48L2c+PC9zdmc+')] opacity-40"></div>
+  
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 text-balance">
+        You're Losing Money Every Time You Miss a Call
+      </h2>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8 lg:gap-12">
+      {problems.map((problem, index) => (
+        <div class="group relative">
+          <div class="absolute -inset-0.5 bg-gradient-to-r from-action to-accent rounded-2xl blur opacity-20 group-hover:opacity-40 transition duration-500"></div>
+          <div class="relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-all duration-300">
+            <div class="w-12 h-12 rounded-xl bg-action/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+              <span class="text-2xl font-bold text-accent">{index + 1}</span>
+            </div>
+            <h3 class="text-xl font-bold mb-4 text-white">{problem.title}</h3>
+            <p class="text-gray-300 leading-relaxed">{problem.description}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

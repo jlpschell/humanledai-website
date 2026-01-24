@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0a2540;
+  --color-action: #2563eb;
+  --color-accent: #38bdf8;
+  --color-bg-alt: #f8fafc;
+  --color-text-muted: #374151;
+
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+/* Custom Utilities if needed */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

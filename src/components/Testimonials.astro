@@ -1,0 +1,60 @@
+---
+
+---
+
+<section id="testimonials" class="py-20 lg:py-32 bg-white">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary mb-6">
+        Real Results from Real Businesses
+      </h2>
+    </div>
+
+    <!-- Featured Testimonial -->
+    <div class="relative">
+      <div
+        class="absolute -inset-1 bg-gradient-to-r from-action to-accent rounded-3xl blur-lg opacity-20"
+      >
+      </div>
+      <div
+        class="relative bg-gradient-to-br from-white to-gray-50 rounded-3xl p-8 lg:p-12 border border-gray-100 shadow-2xl"
+      >
+        <div class="flex flex-col items-center text-center">
+          <div
+            class="w-20 h-20 rounded-full bg-gradient-to-br from-action to-accent mb-6 flex items-center justify-center text-white text-3xl font-bold"
+          >
+            R
+          </div>
+
+          <blockquote class="mb-8">
+            <p
+              class="text-2xl lg:text-3xl font-medium text-primary leading-relaxed"
+            >
+              "Since setting up the AI agent, I haven't missed a single call. My
+              calendar is totally full and I can focus on the actual work
+              instead of playing phone tag all day."
+            </p>
+          </blockquote>
+
+          <div class="space-y-1">
+            <p class="text-xl font-bold text-primary">Ryan</p>
+            <p class="text-text-muted">Ryan's Epoxy Floors, Rockwall TX</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Placeholder for Additional Testimonials -->
+    <div class="mt-12 grid md:grid-cols-2 gap-8">
+      {
+        [1, 2].map(() => (
+          <div class="bg-gray-50 rounded-2xl p-8 border-2 border-dashed border-gray-200 flex items-center justify-center min-h-[200px]">
+            <p class="text-text-muted/50 font-medium">
+              Additional testimonial slot
+            </p>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

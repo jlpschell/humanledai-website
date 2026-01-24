@@ -1,0 +1,109 @@
+---
+const stories = [
+  {
+    category: "The 'On The Job Site' Problem",
+    audience: "Best for: Roofers, Epoxy, Landscapers",
+    quote:
+      "Before this, I was missing customer calls because I was covered in epoxy. By the time I called them back, they'd already hired someone else. Now, the system calls them immediately, qualifies them to make sure they aren't just tire-kickers, and puts them on my calendar. I just look at my phone and see where my next appointment is. It's like having a full-time sales manager without the payroll.",
+    author: "Mike T.",
+    company: "Precision Epoxy & Flooring",
+    outcome: "Never miss a lead while you're doing the actual work.",
+  },
+  {
+    category: "The 'Quality Over Quantity' Problem",
+    audience: "Best for: Pools, Retaining Walls, Custom Builds",
+    quote:
+      "I don't have time to drive 45 minutes for a quote just to find out the homeowner isn't serious. Human Led AI's voice agents changed ALL that. The voice agent actually speaks to them and confirms they are ready to go before I ever start my truck. I'm doing less driving and closing more deals because the people I meet with are actually pre-sold.",
+    author: "Sarah J.",
+    company: "Apex Retaining Walls",
+    outcome:
+      "Stop wasting time on tire-kickers. Meet only with serious buyers.",
+  },
+  {
+    category: "The 'Revenue & Scale' Problem",
+    audience: "Best for: Businesses ready to grow",
+    quote:
+      "We were generating leads, but we couldn't follow up fast enough to have them as clients. This system chases every single lead for us—over and over again—until they book or say no. It's relentless in the best way possible. We've doubled our estimates per week simply because we stopped letting leads slip through the cracks.",
+    author: "David R.",
+    company: "Premier Roofing Solutions",
+    outcome:
+      "Turn lead leakage into booked appointments. Scale without adding staff.",
+  },
+];
+---
+
+<section class="py-20 lg:py-32 bg-bg-alt">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2
+        class="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary mb-6 text-balance"
+      >
+        See What's Possible in Your Industry
+      </h2>
+      <p class="text-xl text-text-muted max-w-3xl mx-auto">
+        Every business is different. Here's what Human Led AI looks like in
+        action across different trades.
+      </p>
+    </div>
+
+    <div class="space-y-8">
+      {
+        stories.map((story, index) => (
+          <div class="group">
+            <div class="relative">
+              <div class="absolute -inset-1 bg-gradient-to-r from-action to-accent rounded-2xl blur opacity-10 group-hover:opacity-20 transition duration-500" />
+              <div class="relative bg-white rounded-2xl p-8 lg:p-12 border border-gray-100 hover:shadow-2xl transition-all duration-300">
+                <div class="flex flex-col lg:flex-row gap-8">
+                  <div class="lg:w-1/3">
+                    <div class="inline-block px-4 py-1.5 rounded-full bg-accent/10 text-accent font-semibold text-sm mb-3">
+                      Story {index + 1}
+                    </div>
+                    <h3 class="text-2xl font-bold text-primary mb-2">
+                      {story.category}
+                    </h3>
+                    <p class="text-text-muted italic text-sm">
+                      {story.audience}
+                    </p>
+                  </div>
+
+                  <div class="lg:w-2/3">
+                    <blockquote class="mb-6">
+                      <p class="text-lg text-text-muted leading-relaxed italic">
+                        "{story.quote}"
+                      </p>
+                    </blockquote>
+
+                    <div class="flex items-center justify-between flex-wrap gap-4">
+                      <div>
+                        <p class="font-bold text-primary">— {story.author}</p>
+                        <p class="text-text-muted text-sm">{story.company}</p>
+                      </div>
+
+                      <div class="px-4 py-2 rounded-lg bg-action/5 border border-action/20">
+                        <p class="text-sm font-semibold text-action">
+                          {story.outcome}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+
+    <div class="text-center mt-12">
+      <p class="text-lg text-text-muted mb-6">
+        Which one sounds like you? Let's talk.
+      </p>
+      <a
+        href="#"
+        class="inline-flex items-center px-8 py-4 rounded-xl bg-action text-white font-bold text-lg hover:bg-action/90 shadow-xl shadow-action/20 hover:scale-105 transition-all duration-200"
+      >
+        Book a Demo
+      </a>
+    </div>
+  </div>
+</section>

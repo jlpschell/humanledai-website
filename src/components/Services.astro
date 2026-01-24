@@ -1,0 +1,58 @@
+---
+const services = [
+  {
+    title: "Inbound Call Handling",
+    description: "Never miss another call. Your AI answers instantly, qualifies the lead, and books the appointment - even at 2am."
+  },
+  {
+    title: "Missed Call Text-Back",
+    description: "If someone hangs up or you're unavailable, AI immediately texts them to continue the conversation and get them scheduled."
+  },
+  {
+    title: "Database Reactivation",
+    description: "Got a list of past customers? AI reaches out with personalized messages and books repeat business on autopilot."
+  },
+  {
+    title: "Lead Generation (Add-On)",
+    description: "Need more leads? We can fill your pipeline with targeted leads for your service area. AI handles them from first contact to booked appointment."
+  }
+];
+---
+
+<section id="services" class="py-20 lg:py-32 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary mb-6 text-balance">
+        Built for Businesses That Can't Afford to Miss a Call
+      </h2>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6 lg:gap-8">
+      {services.map((service, index) => (
+        <div class="group cursor-pointer">
+          <div class="relative h-full">
+            <div class="absolute -inset-0.5 bg-gradient-to-r from-action via-accent to-action bg-[length:200%_100%] rounded-2xl blur opacity-0 group-hover:opacity-30 transition duration-500 group-hover:animate-[shimmer_2s_linear_infinite]"></div>
+            <div class="relative bg-gradient-to-br from-white to-gray-50 border border-gray-100 rounded-2xl p-8 hover:shadow-2xl transition-all duration-300 h-full">
+              <div class="flex items-start gap-4">
+                <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-gradient-to-br from-action to-accent flex items-center justify-center text-white font-bold group-hover:scale-110 transition-transform duration-300">
+                  {index + 1}
+                </div>
+                <div class="flex-1">
+                  <h3 class="text-xl font-bold text-primary mb-3 group-hover:text-action transition-colors">{service.title}</h3>
+                  <p class="text-text-muted leading-relaxed">{service.description}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  @keyframes shimmer {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+  }
+</style>

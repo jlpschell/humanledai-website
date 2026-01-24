@@ -1,0 +1,119 @@
+---
+const links = [
+  { text: "How It Works", href: "#how-it-works" },
+  { text: "Services", href: "#services" },
+  { text: "Pricing", href: "#pricing" },
+  { text: "Testimonials", href: "#testimonials" },
+];
+---
+
+<header
+  class="fixed w-full top-0 z-50 transition-all duration-300 bg-white/80 backdrop-blur-md border-b border-gray-100"
+  id="navbar"
+>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-20">
+      <!-- Logo -->
+      <a href="/" class="flex-shrink-0 flex items-center gap-1 group">
+        <span class="text-2xl font-bold text-primary tracking-tight"
+          >Human Led</span
+        >
+        <span class="text-2xl font-bold text-accent">AI</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-8">
+        {
+          links.map((link) => (
+            <a
+              href={link.href}
+              class="text-text-muted hover:text-primary font-medium transition-colors text-sm lg:text-base"
+            >
+              {link.text}
+            </a>
+          ))
+        }
+      </nav>
+
+      <!-- CTAs -->
+      <div class="hidden md:flex items-center gap-4">
+        <a
+          href="#"
+          class="px-5 py-2.5 rounded-lg text-primary bg-accent/10 sm:bg-transparent sm:hover:bg-accent/10 border-2 border-transparent sm:border-accent shadow-md hover:shadow-lg font-semibold transition-all hover:scale-105 duration-200 text-sm"
+        >
+          Try It Yourself
+        </a>
+        <a
+          href="#"
+          class="px-6 py-2.5 rounded-lg bg-action text-white font-semibold hover:bg-action/90 shadow-lg shadow-action/20 transition-all hover:scale-105 duration-200 text-sm"
+        >
+          Book a Demo
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button
+        id="mobile-menu-btn"
+        class="md:hidden p-2 rounded-lg text-primary hover:bg-gray-100 transition-colors"
+        aria-label="Toggle menu"
+      >
+        <svg
+          class="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div
+    id="mobile-menu"
+    class="hidden md:hidden absolute top-full left-0 w-full bg-white border-b border-gray-100 shadow-xl"
+  >
+    <div class="flex flex-col p-4 space-y-4">
+      {
+        links.map((link) => (
+          <a
+            href={link.href}
+            class="block px-4 py-2 text-text-muted hover:text-primary hover:bg-gray-50 rounded-lg font-medium transition-colors"
+          >
+            {link.text}
+          </a>
+        ))
+      }
+      <div class="pt-4 border-t border-gray-100 flex flex-col gap-3">
+        <a
+          href="#"
+          class="block w-full text-center px-5 py-3 rounded-lg text-primary bg-accent/10 border-2 border-accent shadow-md font-semibold"
+        >
+          Try It Yourself
+        </a>
+        <a
+          href="#"
+          class="block w-full text-center px-5 py-3 rounded-lg bg-action text-white font-semibold shadow-lg shadow-action/20"
+        >
+          Book a Demo
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<script>
+  const mobileBtn = document.getElementById("mobile-menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  if (mobileBtn && mobileMenu) {
+    mobileBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  }
+</script>

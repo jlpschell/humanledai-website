@@ -1,0 +1,284 @@
+---
+
+---
+
+<section id="pricing" class="py-20 lg:py-32 bg-bg-alt">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary mb-6">
+        Simple Pricing. Serious Results.
+      </h2>
+      <p class="text-xl text-text-muted max-w-3xl mx-auto">
+        No hidden fees. No per-minute charges. One flat monthly rate that pays
+        for itself with your first booked job.
+      </p>
+    </div>
+
+    <!-- 3 Pricing Cards -->
+    <div class="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto mb-16">
+      <!-- Tier 1: Starter -->
+      <div class="group relative">
+        <div
+          class="absolute -inset-0.5 bg-gradient-to-r from-action to-accent rounded-3xl blur opacity-10 group-hover:opacity-20 transition duration-500"
+        >
+        </div>
+        <div
+          class="relative bg-white rounded-3xl p-8 border border-gray-100 hover:shadow-xl transition-all duration-300 h-full flex flex-col"
+        >
+          <div class="text-center mb-6">
+            <div class="text-4xl mb-4">📈</div>
+            <h3 class="text-2xl font-bold text-primary mb-2">Starter</h3>
+            <p class="text-sm text-text-muted">For small businesses</p>
+          </div>
+
+          <div class="text-center mb-8">
+            <div class="flex items-baseline justify-center gap-2 mb-2">
+              <span class="text-5xl font-bold text-primary">$497</span>
+              <span class="text-text-muted">/month</span>
+            </div>
+            <p class="text-sm text-accent font-semibold">
+              $4,997/year · Save 17%
+            </p>
+          </div>
+
+          <ul class="space-y-3 mb-8 flex-1">
+            {
+              [
+                "1 AI Voice Agent",
+                "24/7 call answering",
+                "Basic call qualification",
+                "Calendar booking integration",
+                "Missed call text-back",
+                "Email support",
+                "Monthly performance summary",
+              ].map((feature) => (
+                <li class="flex items-start gap-2 text-sm">
+                  <svg
+                    class="w-5 h-5 text-action flex-shrink-0 mt-0.5"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <span class="text-text-muted">{feature}</span>
+                </li>
+              ))
+            }
+          </ul>
+
+          <a
+            href="#"
+            class="block w-full text-center px-6 py-3 rounded-xl border-2 border-action text-action font-bold hover:bg-action hover:text-white transition-all duration-200"
+          >
+            Get Started
+          </a>
+        </div>
+      </div>
+
+      <!-- Tier 2: Growth (Most Popular) -->
+      <div class="group relative lg:-mt-4">
+        <div
+          class="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1.5 rounded-full bg-gradient-to-r from-action to-accent text-white text-sm font-bold shadow-lg z-10"
+        >
+          ⭐ MOST POPULAR
+        </div>
+        <div
+          class="absolute -inset-1 bg-gradient-to-r from-accent to-action rounded-3xl blur opacity-40 group-hover:opacity-60 transition duration-500"
+        >
+        </div>
+        <div
+          class="relative bg-white rounded-3xl p-8 lg:p-10 border-2 border-accent/30 hover:shadow-2xl transition-all duration-300 h-full flex flex-col"
+        >
+          <div class="text-center mb-6">
+            <div class="text-4xl mb-4">🚀</div>
+            <h3 class="text-2xl font-bold text-primary mb-2">Growth</h3>
+            <p class="text-sm text-text-muted">For growing businesses</p>
+          </div>
+
+          <div class="text-center mb-8">
+            <div class="flex items-baseline justify-center gap-2 mb-2">
+              <span class="text-5xl font-bold text-primary">$997</span>
+              <span class="text-text-muted">/month</span>
+            </div>
+            <p class="text-sm text-accent font-semibold">
+              $9,997/year · Save 17%
+            </p>
+          </div>
+
+          <div class="mb-4">
+            <p class="text-sm text-text-muted font-semibold">
+              Everything in Starter, plus:
+            </p>
+          </div>
+
+          <ul class="space-y-3 mb-6 flex-1">
+            {
+              [
+                "Unlimited call volume",
+                "Advanced lead qualification",
+                "SMS + email follow-up sequences",
+                "Database reactivation campaigns",
+                "Priority support",
+                "Weekly performance reports",
+                "1-on-1 onboarding call",
+              ].map((feature) => (
+                <li class="flex items-start gap-2 text-sm">
+                  <svg
+                    class="w-5 h-5 text-accent flex-shrink-0 mt-0.5"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <span class="text-text-muted">{feature}</span>
+                </li>
+              ))
+            }
+          </ul>
+
+          <div class="mb-4 text-center">
+            <p class="text-xs text-text-muted">
+              <strong>Want lead generation?</strong>
+              <em>Call to discuss custom pricing</em>
+            </p>
+          </div>
+
+          <a
+            href="#"
+            class="block w-full text-center px-6 py-4 rounded-xl bg-gradient-to-r from-action to-accent text-white font-bold shadow-xl shadow-accent/30 hover:opacity-90 hover:scale-105 transition-all duration-200"
+          >
+            Get Started
+          </a>
+        </div>
+      </div>
+
+      <!-- Tier 3: Full Pipeline -->
+      <div class="group relative">
+        <div
+          class="absolute -inset-0.5 bg-gradient-to-r from-action to-accent rounded-3xl blur opacity-10 group-hover:opacity-20 transition duration-500"
+        >
+        </div>
+        <div
+          class="relative bg-white rounded-3xl p-8 border border-gray-100 hover:shadow-xl transition-all duration-300 h-full flex flex-col"
+        >
+          <div class="text-center mb-6">
+            <div class="text-4xl mb-4">🎯</div>
+            <h3 class="text-2xl font-bold text-primary mb-2">Full Pipeline</h3>
+            <p class="text-sm text-text-muted">For businesses ready to scale</p>
+          </div>
+
+          <div class="text-center mb-8">
+            <div class="flex items-baseline justify-center gap-2 mb-2">
+              <span class="text-5xl font-bold text-primary">$2,500</span>
+              <span class="text-text-muted text-2xl">+/month</span>
+            </div>
+            <p class="text-sm text-accent font-semibold">
+              Custom annual pricing available
+            </p>
+          </div>
+
+          <div class="mb-4">
+            <p class="text-sm text-text-muted font-semibold">
+              Everything in Growth, plus:
+            </p>
+          </div>
+
+          <ul class="space-y-3 mb-8 flex-1">
+            {
+              [
+                "Lead generation included ($1,500+ value)",
+                "Targeted leads for your service area",
+                "AI handles leads from first contact to booking",
+                "Scale lead volume as needed",
+                "Dedicated account manager",
+                "Strategy calls",
+                "Premium support",
+              ].map((feature) => (
+                <li class="flex items-start gap-2 text-sm">
+                  <svg
+                    class="w-5 h-5 text-accent flex-shrink-0 mt-0.5"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <span class="text-text-muted">{feature}</span>
+                </li>
+              ))
+            }
+          </ul>
+
+          <a
+            href="#"
+            class="block w-full text-center px-6 py-3 rounded-xl bg-accent text-primary font-bold hover:bg-accent/90 shadow-lg shadow-accent/20 hover:scale-105 transition-all duration-200"
+          >
+            Book a Call
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Commitment Discounts -->
+    <div class="max-w-4xl mx-auto">
+      <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-lg">
+        <h4 class="text-2xl font-bold text-primary text-center mb-8">
+          Commitment Discounts
+        </h4>
+
+        <div class="overflow-x-auto">
+          <table class="w-full">
+            <thead>
+              <tr class="border-b-2 border-gray-200">
+                <th class="text-left py-4 px-4 text-primary font-bold"
+                  >Commitment</th
+                >
+                <th class="text-left py-4 px-4 text-primary font-bold"
+                  >Benefit</th
+                >
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b border-gray-100">
+                <td class="py-4 px-4 text-text-muted">Month-to-Month</td>
+                <td class="py-4 px-4 text-text-muted">Standard pricing</td>
+              </tr>
+              <tr class="border-b border-gray-100 bg-accent/5">
+                <td class="py-4 px-4 text-text-muted font-semibold"
+                  >3 Months Upfront</td
+                >
+                <td class="py-4 px-4 text-action font-semibold"
+                  >10% off + priority onboarding</td
+                >
+              </tr>
+              <tr class="bg-action/5">
+                <td class="py-4 px-4 text-text-muted font-semibold"
+                  >6 Months Upfront</td
+                >
+                <td class="py-4 px-4 text-action font-bold"
+                  >17% off + 1 month FREE</td
+                >
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="text-sm text-text-muted/70 mt-6 text-center">
+          All plans include setup and training. Lead generation pricing varies
+          based on your market and volume goals.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
