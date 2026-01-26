@@ -1,9 +1,11 @@
 ---
 const links = [
-  { text: "How It Works", href: "#how-it-works" },
-  { text: "Services", href: "#services" },
-  { text: "Pricing", href: "#pricing" },
-  { text: "Privacy Policy", href: "/privacy" }
+  { text: "How It Works", href: "/#how-it-works" },
+  { text: "Services", href: "/#services" },
+  { text: "Pricing", href: "/#pricing" },
+  { text: "Contact", href: "/contact" },
+  { text: "Privacy Policy", href: "/privacy" },
+  { text: "Terms of Service", href: "/terms" },
 ];
 ---
 
@@ -25,23 +27,39 @@ const links = [
       <div>
         <h4 class="font-bold text-lg mb-4">Quick Links</h4>
         <ul class="space-y-3">
-          {links.map(link => (
-            <li>
-              <a href={link.href} class="text-gray-300 hover:text-accent transition-colors text-sm">
-                {link.text}
-              </a>
-            </li>
-          ))}
+          {
+            links.map((link) => (
+              <li>
+                <a
+                  href={link.href}
+                  class="text-gray-300 hover:text-accent transition-colors text-sm"
+                >
+                  {link.text}
+                </a>
+              </li>
+            ))
+          }
         </ul>
       </div>
 
       <!-- Contact -->
       <div>
         <h4 class="font-bold text-lg mb-4">Contact</h4>
-        <p class="text-gray-300 text-sm">
-          Serving businesses in DFW and beyond
-        </p>
-        <!-- TODO: Add email and phone when ready -->
+        <div class="space-y-3">
+          <p class="text-gray-300 text-sm">Caddo Mills, TX</p>
+          <a
+            href="mailto:support@humanledai.net"
+            class="block text-gray-300 hover:text-accent transition-colors text-sm"
+          >
+            support@humanledai.net
+          </a>
+          <a
+            href="tel:9724337280"
+            class="block text-gray-300 hover:text-accent transition-colors text-sm"
+          >
+            972-433-7280
+          </a>
+        </div>
       </div>
     </div>
 

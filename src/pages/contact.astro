@@ -1,0 +1,142 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="Contact Us | Human Led AI">
+    <Navbar />
+    <main class="py-20 lg:py-32 bg-bg-alt/30">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h1 class="text-4xl sm:text-5xl font-bold text-primary mb-6">
+                    Contact Us
+                </h1>
+                <p class="text-xl text-text-muted">
+                    We're here to help you automate your growth.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 items-start">
+                <!-- Business Info -->
+                <div
+                    class="bg-white p-8 rounded-3xl border border-gray-100 shadow-xl shadow-primary/5 h-full"
+                >
+                    <h2
+                        class="text-2xl font-bold text-primary mb-6 flex items-center gap-2"
+                    >
+                        <span class="text-action">📍</span> Business Information
+                    </h2>
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-10 h-10 rounded-full bg-action/10 flex items-center justify-center flex-shrink-0"
+                            >
+                                <span class="text-xl">📍</span>
+                            </div>
+                            <div>
+                                <p class="font-bold text-primary">Location</p>
+                                <p class="text-text-muted">Caddo Mills, TX</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-10 h-10 rounded-full bg-action/10 flex items-center justify-center flex-shrink-0"
+                            >
+                                <span class="text-xl">📧</span>
+                            </div>
+                            <div>
+                                <p class="font-bold text-primary">Email</p>
+                                <a
+                                    href="mailto:support@humanledai.net"
+                                    class="text-action hover:underline"
+                                    >support@humanledai.net</a
+                                >
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-10 h-10 rounded-full bg-action/10 flex items-center justify-center flex-shrink-0"
+                            >
+                                <span class="text-xl">📞</span>
+                            </div>
+                            <div>
+                                <p class="font-bold text-primary">Phone</p>
+                                <a
+                                    href="tel:9724337280"
+                                    class="text-action hover:underline"
+                                    >972-433-7280</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 pt-8 border-t border-gray-100">
+                        <h3 class="font-bold text-primary mb-2">
+                            Service Areas
+                        </h3>
+                        <p class="text-text-muted">
+                            We serve businesses across DFW and beyond.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Get In Touch -->
+                <div
+                    class="bg-primary text-white p-8 rounded-3xl shadow-xl shadow-primary/20 h-full flex flex-col justify-center"
+                >
+                    <h2 class="text-2xl font-bold mb-6">Get in Touch</h2>
+                    <div class="space-y-8">
+                        <div
+                            class="bg-white/10 p-6 rounded-2xl border border-white/10 hover:bg-white/15 transition-colors cursor-pointer group"
+                        >
+                            <p
+                                class="text-accent font-bold mb-2 uppercase tracking-wider text-xs"
+                            >
+                                Fastest Method
+                            </p>
+                            <h3 class="text-xl font-bold mb-2">Book a Demo</h3>
+                            <p class="text-blue-100 text-sm mb-4">
+                                See how AI can fill your calendar in 15 minutes.
+                            </p>
+                            <a
+                                href="/#pricing"
+                                class="inline-flex items-center gap-2 text-accent font-bold group-hover:translate-x-1 transition-transform"
+                            >
+                                Visit Booking Hub <span class="text-xl">→</span>
+                            </a>
+                        </div>
+
+                        <div class="space-y-4">
+                            <p class="text-blue-100 italic">
+                                "Our team is ready to help you stop losing leads
+                                and start closing more deals."
+                            </p>
+                            <div class="flex items-center gap-3">
+                                <div
+                                    class="w-8 h-8 rounded-full bg-accent/20 border border-accent/20"
+                                >
+                                </div>
+                                <div>
+                                    <p class="text-sm font-bold">
+                                        Jason Schell
+                                    </p>
+                                    <p class="text-xs text-blue-200">
+                                        Owner, Human Led AI
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-16 text-center text-text-muted/60 text-sm">
+                © 2025 Human Led AI. All rights reserved.
+            </div>
+        </div>
+    </main>
+    <Footer />
+</Layout>
